@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tell Me A Joke</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(3, 48, 45);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .joke-container {
+      width: 50%;
+      /* height: 50%; */
+      background-color: rgb(1, 28, 38);
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      column-gap: 0.5rem;
+      color: white;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      font-size: clamp(1rem, 8vw, 3rem);
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    p {
+      color: rgb(211, 119, 119);
+      font-size: clamp(1rem, 8vw, 0.8rem);
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    button {
+      padding: 1.5% 2% 1.5% 2%;
+      border-radius: 0.1rem;
+      border: none;
+      background-color: cyan;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      cursor: pointer;
+      transition: 0.2s;
+      font-size: clamp(1rem, 8vw, 0.8rem);
+    }
+    button:hover {
+      background-color: rgb(37, 177, 177);
+    }
+    .button {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 5rem 0 5rem 0;
+    }
+    .subtitle {
+      color: wheat;
+      font-size: clamp(1rem, 8vw, 2rem);
+    }
+    .joke {
+      height: 2rem;
+      width: 100%;
+      padding: 1rem 0 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: clamp(1rem, 1vw, 2rem);
+    }
+  </style>
+  <body>
+    <div class="joke-container">
+      <h1>Tell me a Joke &#128512;</h1>
+      <p><q>creator : cyberseckhatri</q></p>
+      <p class="subtitle">Here's a Joke of the day &#128071;</p>
+      <div id="displayJoke" class="joke"></div>
+      <div class="button">
+        <button id="tell-button" onclick="fetchingJoke()" type="submit">
+          Make me Laugh
+        </button>
+      </div>
+    </div>
+
+    <script src="joke.js"></script>
+  </body>
+</html>
