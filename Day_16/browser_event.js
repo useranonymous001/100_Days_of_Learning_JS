@@ -8,7 +8,7 @@ document.body.style.color = "white";
 
 let a = document.getElementsByClassName("container")[0];
 
-a.onclick = () => {d
+a.onclick = () => {
   a.innerHTML = "hello whats up mann";
 };
 
