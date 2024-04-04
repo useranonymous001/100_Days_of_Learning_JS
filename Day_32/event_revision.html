@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Probagation</title>
+  </head>
+
+  <style>
+    #container {
+      height: 20rem;
+      background-color: red;
+      width: 20rem;
+      display: flex;
+      align-items: center;
+    }
+    div {
+      border: 2px solid black;
+    }
+    .div1 {
+      background-color: green;
+      height: 10rem;
+      width: 10rem;
+      display: flex;
+      align-items: center;
+    }
+    .innerdiv1 {
+      background-color: lightblue;
+      height: 5rem;
+      width: 5rem;
+    }
+  </style>
+  <body>
+    <h1>Learning Event Probagation</h1>
+
+    <div id="container">
+      container
+      <div class="div1">
+        outer
+
+        <div class="innerdiv1">
+          inner
+          <a href="" id="clicker"> click</a>
+        </div>
+      </div>
+    </div>
+    <script src="event_revision.js"></script>
+  </body>
+</html>

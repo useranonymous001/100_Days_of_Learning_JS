@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manupulation</title>
+  </head>
+
+  <style>
+    * body {
+      height: 100vh;
+      background-color: rgb(133, 133, 133);
+    }
+    #container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    #model {
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      transform: translate(-50%, -50%);
+      animation-name: animatemodal;
+      animation-duration: 0.4s;
+    }
+    #open-btn {
+      position: absolute;
+      top: 75%;
+      left: 10%;
+    }
+    #close-btn {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: red;
+      cursor: pointer;
+    }
+    @keyframes animatemodal {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+      to {
+        top: 50%;
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <!-- model button -->
+    <button id="open-btn">
+      <p>Where's our model?</p>
+    </button>
+    <!-- model container -->
+
+    <div id="container">
+      <div id="model">
+        <p>I am here bro</p>
+        <div id="close-btn">&times;</div>
+      </div>
+    </div>
+    <script src="project_2.js"></script>
+  </body>
+</html>
