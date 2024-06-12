@@ -1,0 +1,19 @@
+<div class="user-profile">
+  <img src="${user.avatar_url}" alt="user profile" />
+  <h2>${user.login} || ${user.name}</h2>
+  <p>Bio: ${user.bio}</p>
+  <p>Followers: ${user.followers} || Following : {user.following}</p>
+  <p>Email: ${user.email}</p>
+  <p>Twitter: ${user.twitter_username}</p>
+  <p>Blog: ${user.blog}</p>
+  <p>Company: ${user.company}</p>
+  <h5>Repos : ${user.public_repos}</h5>
+
+  <br />
+
+  <a href="${user.url}">Visit User</a>
+</div>
+
+<div class="repositories">
+  <h4><a href="repo.html_url" target="_blank">${repo.name}</a></h4>
+</div>
